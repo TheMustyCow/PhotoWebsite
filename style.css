@@ -1,0 +1,59 @@
+
+body {
+    background-color: #434343; /* light gray or whatever color you want */
+    margin: 0; /* removes default browser spacing */
+    font-family: sans-serif; /* optional: cleaner font */
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Gallery container */
+
+/* Mobile Default: */
+.gallery {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap;
+    justify-content: center; /* Center the sections horizontally */
+    gap: 20px; /* Space between sections */
+    margin: 0 auto;
+    padding: 3rem 0   
+}
+
+@media (min-width: 765px) {
+    .gallery {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap;
+        justify-content: center; /* Center the sections horizontally */
+        gap: 20px; /* Space between sections */
+        margin: 0 auto;
+        max-width: 75%;
+    }   
+}
+/* Styling for each section */
+.section {
+    text-align: center; /* Center text within each section */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside each section */
+    flex: 0 0 calc(33.33% - 20px); /* Allow sections to grow equally */
+    max-width: 400px; /* Set a maximum width for each section */
+}
+
+.section.photo {
+    border: 3px solid #434343;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside each section */
+}
+
+
+/* Styling for images */
+.photo {
+    max-width: 100%; /* Responsive image */
+    height: 85%; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
